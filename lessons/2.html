@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Arrays &mdash; TEDI London</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">	 -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="../css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="../js/modernizr-2.6.2.min.js"></script>
+
+	<!-- HTML Example -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/html-example.css" />
+
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<!--<li><a href="set_up.html">Setup</a></li>-->
+							<li class="has-dropdown"><a href="lessons/index.html">Lessons</a>
+								<ul class="dropdown">
+									<li><a href="lessons/1.html">Introduction</a></li>
+									<li><a href="lessons/2.html">Appreciating Arrays</a></li>
+									<li><a href="lessons/3.html">Understanding + Manipulating</a></li>
+								
+								</ul>
+							</li>
+							<li class="btn-cta"><a href="assessment.html"><span>Assessment</span></a></li>
+						</ul>
+					</div>
+					</div>
+					
+				</div>
+			</div>
+		</nav>
+
+
+
+		<div id="fh5co-wireframe">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Appreciating Arrays</h2>
+				</div>
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-md-7 animate-box">
+					<p>
+						The examples in the last lesson were written to allow you to understand how arrays work, but they don’t do much justice in terms of enhancing your appreciation of arrays. Let’s look at a few examples of how basic tasks work with and without arrays, this will also allow you to practice creating them yourself.<br><br> 
+					</p><br>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+			
+			Without using an array, calculate the average age of 10 of your peers at TEDI London. (You must enter the valid age of at least 10 students, if you haven’t met 10 people yet, consider this your opportunity to introduce yourself!).
+
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+
+						C<br>
+						<code>  
+						int numStudents = 10; //number of students<br>
+
+						//ages of each student<br>
+						double t0 = 18; <br>
+						double t1 = 20; <br>
+						double t2 = 34; <br>
+						double t3 = 17; <br>
+						double t4 = 19; <br>
+						double t5 = 21; <br>
+						double t6 = 22; <br>
+						double t7 = 23; <br> 
+						double t8 = 26; <br>
+						double t9 = 20; <br>
+	
+	double sum = 0; //initialise sum<br>
+	double mean = 0; //initialise mean<br>
+ 
+ 	//evaluated mean<br>
+	sum = t0 + t1 + t2 + t3 + t4 + t5 + t6 + t7 + t8 + t9;<br>
+	mean = sum / numStudents;<br>
+
+	return mean;<br>
+
+				</code>
+
+					</div> 
+
+				</div> 
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Java <br>
+						<code> 
+						int valueCount = 10;
+        				int t1 = 18;<br>
+        				int t2 = 20;<br>
+        				int t3 = 34;<br>
+        				int t4 = 17;<br>
+        				int t5 = 19;<br>
+        				int t6 = 21;<br>
+        				int t7 = 22;<br>
+        				int t8 = 23;<br>
+        				int t9 = 26;<br>
+        				int t10 = 20<br>;
+        				int sumAges = t1 + t2 + t3 + t4 + t5 + t6 + t7 + t8 + t9 + t10;<br>
+        				double meanAges = (double)sumAges / valueCount;<Br>
+	  				System.out.println(meanAges);<Br><br><br><Br><br><br>
+
+						</code>
+
+					</div> 
+
+				</div> 
+
+				<br><br>
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Perl <Br>
+						<code>
+
+							my $numStudents = 10; #total number of students
+
+							#ages of each student<br> 
+							my $t0 = 18; <br> 
+							my $t1 = 20; <br> 
+							my $t2 = 34; <br> 
+							my $t3 = 17; <br> 
+							my $t4 = 19; <br> 
+							my $t5 = 21; <br> 
+							my $t6 = 22; <br> 
+							my $t7 = 23; <br> 
+							my $t8 = 26; <br> 
+							my $t9 = 20; <br> 
+
+							#sum all ages<br>
+							my $sum = $t0 + $t1 + $t2 + $t3 + $t4 + $t5 + $t6 + $t7 + $t8 + $t9;<br>
+							#get the mean of ages<br>
+							my $mean = $sum/$numStudents;<br>
+
+							#print mean
+ <br> 							print "$mean <br> \n";<br>
+
+
+
+
+						</code> 
+					</div> 
+
+				</div> 
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Python <br>
+						<code>
+
+						value_count = 10
+						t1 = 18 <br> 
+						t2 = 20 <br> 
+						t3 = 34 <br> 
+						t4 = 17 <br> 
+						t5 = 19 <br> 
+						t6 = 21 <br> 
+						t7 = 22 <br> 
+						t8 = 23 <br> 
+						t9 = 26 <br> 
+						t10 = 20 <Br> 
+						sum_ages = t1 + t2 + t3 + t4 + t5 + t6 + t7 + t8 + t9 + t10<Br>
+						mean_ages = sum_ages / value_count<br>
+						print(mean_ages)<br>
+
+    				</code>
+
+					</div> 
+
+				</div> 
+
+
+
+
+			</div> <!-- end of row --> 
+
+			<div class ="row">
+				<br><br>
+				<h4>Utilising an array, calculate the average age of 25 of your peers at TEDI London. <h4> <br><br>
+							<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						C <br>
+						<code>
+						int numStudents = 25; //number of students<br>
+						double ages[25] = {18, 20, 34, 17, 19, 21, 22, 23, 26, 20, 22, 45, 15, 21, 22, 18, 20, 34, 17, 19, 21, 22, 23, 26, 20};<br>
+						int sum = 0; //initialise sum<br>
+						//iterate through array and sum numbers<br>
+						for(int i = 0; i &lt; numStudents; i++){<br>
+						sum = sum + ages[i];<br>
+					}<br>
+					double mean = 0; //initialise mean<br>
+					mean = sum/numStudents;<br>
+					return(mean);<br>
+
+
+						</code> 
+					</div> 
+
+				</div> 
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Java <br> <code>
+						
+						int[] allAges = new int[] {20, 34, 17, 19, 21, 22, 23, 26, 20, 18, 20, 34,17, 19, 21, 22, 23, 26, 20, 18, 21,19, 25, 32, 26}; <br>
+						int sumAgesLargeArray = 0;<br>
+						for (int age : allAges) {<br>
+						sumAgesLargeArray += age;<br>
+						}<br>
+						double meanAgesLargeArray = (double)sumAgesLargeArray / valueCountLarge;<br>
+						System.out.println(meanAgesLargeArray);<br>
+
+    </code>
+
+					</div> 
+
+				</div> 
+
+				<br><br>
+
+
+				</div> 
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Python<br> <code>
+						value_count = 25<br>
+    					all_ages = [20, 34, 17, 19, 21, 22, 23, 26, 20, 18, 20, 34, 17, 19, 21, 22, 23, 26, 20, 18, 21, 19, 25, 32, 26]<br>
+    					sum_ages = 0<br>
+    					for age in all_ages:<br>
+     						sum_ages = sum_ages + age<br>
+    					mean_ages = sum_ages / value_count<br>
+    					print(mean_ages)<br>
+
+
+					</code>
+					</div> 
+
+				</div> 
+
+			</div> <!-- End of row--> 
+
+			<div class = "row">
+				<div class = "col-md-8">
+			<h4> Other than reducing the sheer number of lines in our code, there are other key reasons that arrays are of great benefit. More on this later. </h4> <br> 
+
+			<h3> Activity: </h3> 
+			Re-do this page in another language. Feel free to refer to one of the crash course nodes to assist you with syntax if required. <br>
+		</div> 
+			</div> 
+
+
+			<div class="row" id="tbr-hidden-1">
+				<div class="col-md-16 animate-box">
+
+					<a class="btn btn-primary btn-lg btn-demo" href="3.html">Understanding + Manipulating</a>
+				</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+	</div>
+
+
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="../js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="../js/jquery.flexslider-min.js"></script>
+	<!-- Main -->
+	<script src="../js/main.js"></script>
+	<!-- Reveal -->
+	<script src="../js/reveal.js"></script>
+
+	</body>
+</html>

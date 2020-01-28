@@ -1,0 +1,498 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Arrays &mdash; TEDI London</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">	 -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="../css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="../js/modernizr-2.6.2.min.js"></script>
+
+	<!-- HTML Example -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../css/html-example.css" />
+
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<!--<li><a href="set_up.html">Setup</a></li>-->
+							<li class="has-dropdown"><a href="lessons/index.html">Lessons</a>
+								<ul class="dropdown">
+									<li><a href="lessons/1.html">Introduction</a></li>
+									<li><a href="lessons/2.html">Appreciating Arrays</a></li>
+									<li><a href="lessons/3.html">Understanding + Manipulating</a></li>
+								
+								</ul>
+							</li>
+							<li class="btn-cta"><a href="assessment.html"><span>Assessment</span></a></li>
+						</ul>
+					</div>
+					</div>
+					
+				</div>
+			</div>
+		</nav>
+
+
+
+		<div id="fh5co-wireframe">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Paint By Numbers</h2>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-5 animate-box">
+					<div class="user-frame">
+						<img src="../images/paint1.png" width="300">
+		
+					</div>
+				</div>
+				<div class="col-md-7 animate-box">
+					<p>
+						Recently, I’ve started a new activity. It’s called Paint by Numbers. The concept is almost identical to a colouring book that you may have used when you were younger, where there is a key to tell you what colour to use in each section. <br><br>
+ 
+						The way it works is I’m given a painting. Like the image below. And a series of paint. Rather than having 8 separate tubes of paint lying around, this system has one large connected row of smaller containers, with each container containing a tube of paint. They’re all connected so that we don’t lose any paint. They’re also numbered. <br><br><br>
+
+					</p><br>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-7 animate-box">
+					<p>
+						So when I attempt to paint the Sun, I don’t have to search through every single individual loose tube until I find yellow. They are in a structured set of boxes, and I just have to go to the third box. This is really easy. For the smiley face, I just have to go to the 8th box. Then for the heart I go to the 6th box.<br><br>
+ 
+						In this scenario, the paint set is your array. An array is a data structure.It stores data or information in an ordered way. It makes things easy search, access and find. It can keep similar things together.  <br>
+
+
+					</p><br>
+				</div>
+
+				<div class="col-md-5 animate-box">
+					<div class="user-frame">
+						<img src="../images/paint2.png" width="300">
+		
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-5 animate-box">
+					<div class="user-frame">
+						<code> 
+							New Array called Paints<br>
+
+							Paints = 8 Paint Containers<br>
+
+							Paints[0] = Blue<br>
+							Paints[1] = Orange<br>
+							Paints [2]= Yellow<br>
+							Paints[3] = Grey<br>
+							Paints[4] = Green<br>
+							Paints[5] = Red<br>
+							Paints[6] = Purple<br>
+							Paints[7] = Brown<br> 
+
+
+						</code> 
+						
+		
+					</div>
+				</div>
+
+				<div class="col-md-7 animate-box">
+					<p>
+						
+					Let’s examine the above. In most cases, our first step is to initialise the array and set the number of containers of paint to 8. This is because arrays are fixed-size, meaning we typically have to define their size before we use them. <br><br> Something you may have noticed is that the 8th element in the array is actually put into Paints[7] and not Paints[8]. This is because with the majority of programming languages, indexing starts at 0. This means the first element isn’t paints[1] it’s paints[0]. <br><br>
+
+					Alternative worked examples are presented in several languages below: <br><br>
+
+
+
+					</p><br>
+				</div>
+
+			
+			</div>
+
+			<div class ="row">
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+
+						C<br>
+						<code>  
+						#include &lt;stdio.h&gt; <br>
+						#include &lt;string.h&gt;<br>
+						#define NUM_PAINTS 8<br>
+						#define MAX_SIZE_STRING 100<br>
+						Int main (){<br>
+						//initialise empty array<br>
+						char paints[NUM_PAINTS][MAX_SIZE_STRING];<br>
+						//add values to array<br>
+						strcpy(paints[0], "Blue");<br>
+						strcpy(paints[1], "Orange");<br>
+						strcpy(paints[2], "Yellow");<br>
+						strcpy(paints[3], "Grey");<br>
+						strcpy(paints[4], "Green");<br>
+						strcpy(paints[5], "Red");<br>
+						strcpy(paints[6], "Purple");<br>
+						strcpy(paints[7], "Brown");<br>
+
+						//print array<br>
+						for(int i = 0; i &lt; 8; i++){<br>
+							printf("%s ", paints[i]);;<br>
+						}<br>
+					}<br>
+				</code>
+
+					</div> 
+
+				</div> 
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Java <br>
+						<code> 
+						public class Main {<br>
+    					public static void main(String[] args) {<br>
+	    				// Task 1<br>
+        				int numPaints = 8; <br>
+        				String[] paints = new String[numPaints];<br>
+        				paints[0] = "Blue";<br>
+        				paints[1] = "Orange";<br>
+        				paints[2] = "Yellow";<br>
+        				paints[3] = "Grey";<br>
+        				paints[4] = "Green";<br>
+        				paints[5] = "Red";<br>
+        				paints[6] = "Purple";<br>
+        				paints[7] = "Brown";<br>
+        				print(paints);<br>
+    					}<br>
+						}<br>
+						<br><br><br><br><br><br><br>
+						</code>
+
+					</div> 
+
+				</div> 
+
+				<br><br>
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Perl <Br>
+						<code>
+
+							#!usr/bin/perl<br>
+							use strict;<br>
+
+							#declare array<br>
+							my @paints = ();<br>
+
+							#fill array
+							$paints[0] = "Blue";<br>
+							$paints[1] = "Orange";<br>
+							$paints[2] = "Yellow";<br>
+							$paints[3] = "Grey";<br>
+							$paints[4] = "Green";<br>
+							$paints[5] = "Red";<br>
+							$paints[6] = "Purple"; <br>
+							$paints[7] = "Brown";<br> 
+
+							#print entire array<br>
+							print "@paints\n";<br>
+
+
+
+						</code> 
+					</div> 
+
+				</div> 
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Python <br>
+						<code>
+
+						paints = list()<br>
+    					paints.append("Blue")<br>
+    					paints.append("Orange")<br>
+    					paints.append("Yellow")<br>
+    					paints.append("Grey")<br>
+    					paints.append("Green")<br>
+    					paints.append("Red")<br>
+    					paints.append("Purple")<br>
+    					paints.append("Brown")<br>
+    					print(paints)<br>
+
+    				</code>
+
+					</div> 
+
+				</div> 
+
+
+
+
+			</div> <!-- end of row --> 
+
+			<div class ="row">
+				<br><br>
+				<h4>Consider the following shorter solutions <h4> <br><br>
+							<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						C <br>
+						<code>
+						char* paints[8] = {"Blue", "Orange", "Yellow", "Grey", "Green", "Red", "Purple", "Brown"}; <br> 
+						//print array <br> 
+						for(int i = 0; i &lt; 8; i++){<br> 
+						printf("%s ", paints[i]);; <br> 
+
+						</code> 
+					</div> 
+
+				</div> 
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Java <br> <code>
+						String[] paints = new String[] {"Blue", "Orange", "Yellow", "Grey","Green", "Red", "Purple", "Brown"};<br> 
+        print(paints)<br><br><br>
+    </code>
+
+					</div> 
+
+				</div> 
+
+				<br><br>
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Perl <br> 
+						<code> 
+
+						my @paints = ("Blue", "Orange", "Yellow", "Grey", "Green", "Red", "Purple", "Brown"); <br>
+
+print "@paints\n";<br> 
+
+</code> 
+
+					</div> 
+
+				</div> 
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Python<br> <code>
+paints = ["Blue", "Orange", "Yellow", "Grey", "Green", "Red", "Purple", "Brown"]<br> 
+    print(paints)<br>
+
+					</code>
+					</div> 
+
+				</div> 
+
+			</div> <!-- End of row--> 
+
+			<div class ="row">
+				<br><br> 
+			So as a general definition: <br> 
+			An array is a data structure, which can store a fixed-size collection of elements of the same data type.<br> 
+			There are typically three key steps typically in constructing an array<br> <br> 
+			Declare the array name.<br> 
+			Create the array.<br>
+			Initialize the array values.<br>
+
+			</div> 
+			<h4> Quiz Time </h4> 
+
+			<b> True or False</b> 
+			1.	Indexing starts at 1 in an array. <br><br> 
+
+
+ 
+			2.	In C and Java, an array is a data structure which can store a dynamic/variable-size collection of elements <br><br> 
+
+ 
+3.	Here is a snippet of code. It defines an array called Names, that stores strings of people’s names. The start and end has been chopped off. <br><br> 
+ 
+Names[5] = “Morri” <br>
+Names[6] = “Judy”<br>
+Names[7]= “Ang”<br>
+Names[8] = “Jaz”  <br>    	
+The 7th element in the array is Judy<br> 
+
+
+		</div> <!-- end of row --> 
+
+
+
+					<div class ="row">
+
+						<div class = "col-md-8">
+
+						<h4> Activity:</h4> 
+						In a language of your choice (C, Java, Perl,Python, etc) or in pseudo code, describe how you would define an array that stores numbers [1-10], with one integer in each ‘box’.<br><br> 
+
+						Solutions: 
+					</div>
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						C <br> <code> 
+						int numbers[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};<br> 
+						//print array<br>
+						for(int i = 0; i &lt; 10; i++){<br>
+						printf("%d ", numbers[i]);;<br>
+
+					</code> 
+					</div> 
+
+				</div> 
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Java <br> <code> 
+
+						int[] number = new int[10];<br> 
+number = {1, 2, 3, 4, 5, 6, 7, 8, 9 , 10};<br>
+print(number);<Br><br>
+					</code> 
+
+
+					</div> 
+
+				</div> 
+
+				<br><br>
+
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Perl <br> <code> 
+
+						my @number = (1..10);<br>
+print "@number\n";<br>
+					</code> 
+					</div> 
+
+				</div> 
+				<div class = "col-md-6 animate-box">
+					<div class = "user-frame">
+						Python<br><code>
+
+						numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]<br> 
+print(numbers)<br> 
+					</code> 
+					</div> 
+
+				</div> 
+
+
+
+
+			</div> <!-- end of row --> 
+
+			<div class="row" id="tbr-hidden-1">
+				<div class="col-md-16 animate-box">
+
+					<a class="btn btn-primary btn-lg btn-demo" href="2.html">Appreciating Arrays</a>
+				</div>
+
+				</div>
+			</div>
+
+
+
+
+
+	</div>
+
+
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="../js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="../js/jquery.flexslider-min.js"></script>
+	<!-- Main -->
+	<script src="../js/main.js"></script>
+	<!-- Reveal -->
+	<script src="../js/reveal.js"></script>
+
+	</body>
+</html>
